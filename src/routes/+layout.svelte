@@ -6,8 +6,6 @@ import '$lib/styles/prism.css'
 import { fade } from 'svelte/transition'
 export let data
 </script>
-
-
 <Header />
 {#key data.currentRoute}
   <main class="rounded" in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>

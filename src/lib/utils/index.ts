@@ -6,7 +6,7 @@ export const fetchMarkdownPosts = async () => {
       const post = await resolver()
       const previewRaw = post.default.render().html.replace(/<h\d>.*<\/h\d>\n/g, "").replace(/<p>(.*?)<\/p>/g, "$1").split(' ')      
       const { metadata } = await resolver()
-      const postPath = path.replace(/\/src\/posts\/(.*?)\.md/, "/musings/$1")
+      const postPath = path.replace(/\/src\/posts\/(.*?)\.md/, "/musings/post/$1")
       let preview = previewRaw.slice(0, 15).join(" ");
       if (previewRaw.length > 15) {
         preview += "[...]";

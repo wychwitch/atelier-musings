@@ -4,7 +4,7 @@ export let tags
     <ul class="tags inline">
       {#each tags as tag}
         <li class="inline">
-          <a class="inline rounded-lg bg-flushed-violet p-1 hover:border-4 hover:bg-transparent border-flushed-violet transition-all ease-in-out delay-25 text-sm" href="/tags/{tag}">
+          <a class="inline rounded-lg bg-flushed-violet p-1 hover:border-4 hover:bg-transparent border-flushed-violet transition-all ease-in-out delay-25 text-sm" href="/musings/tags/{tag}">
             <p class="inline">{tag}</p>
           </a>
         </li>

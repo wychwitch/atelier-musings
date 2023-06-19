@@ -1,0 +1,42 @@
+<script>
+import Tags from '$lib/components/Tags.svelte'
+export let posts
+</script>
+<section>
+{#if posts.length}
+<ul class="flex flex-col sm:flex-row flex-wrap justify-center">
+  {#each posts as post}
+    <li class="m-2 w-96 h-80 border-4 border-flushed-violet rounded-lg p-4">
+      <h2>
+        <a class="border-b-4 border-flushed-violet hover:border-b-8 transition-all ease-in-out delay-25" href={post.path}>
+          {post.meta.title}
+        </a>
+      </h2>
+     <p class="text-base">Published {post.meta.date}</p>
+        <br>
+{#if post.meta.tags.length}
+    <p class="inline align-middle">tags:</p> <Tags tags={post.meta.tags} /> 
+{/if}
+      <br>
+      <p class="text-lg">{@html post.Preview} </p>
+      <p class="my-6"><a href={post.path} class="readmore rounded-lg bg-flushed-violet p-1 hover:border-4 hover:bg-transparent border-flushed-violet transition-all ease-in-out delay-25">Read More</a></p>
+    </li>
+  {/each}
+</ul>
+
+{/if}
+</section>
+<style >
+  a.readmore::after{
+    content:""
+  }
+  section{
+   margin: 1rem;
+  }
+  a{
+    font-size: inherit;
+  }
+h2{
+    font-size: 2rem;
+  }
+</style>

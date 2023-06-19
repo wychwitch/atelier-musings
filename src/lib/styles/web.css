@@ -1,0 +1,138 @@
+@import url(variables.css);
+
+*{box-sizing: border-box;}
+
+body{
+    background-color: var(--pale-violet);
+    margin:0;
+}
+
+
+header input{
+    display: none;
+}
+
+p, footer, header{
+    color: var(--deep-violet);
+    font-family: var(--f6);
+    font-size: 1.4em;
+    line-height: 1.25em;
+    font-weight: 600;
+
+}
+
+article p{
+margin-bottom: 2rem;
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 1em;
+}
+
+h2 {
+    font-family: var(--f7);
+    color: var(--deep-violet);
+    margin: 0;
+    font-size: 3rem;
+}
+
+h3{
+    font-family: var(--f7);
+    color: var(--deep-violet);
+    margin: 0;
+    font-size: 2rem;
+}
+
+h1{
+    font-family: var(--f7);
+    color: var(--deep-violet);
+    margin: 0;
+    font-size: 4rem;
+}
+article h1{
+    font-size: 4rem;
+  }
+article h2{
+    font-size: 3rem;
+  }
+article h3{
+    font-size: 2rem;
+  }
+article h4{
+    font-size: 1.5rem;
+  }
+
+main{
+    background-color: var(--dyed-white);
+}
+
+
+article p a, footer a{
+    text-decoration: none;
+    color: var(--deep-violet);
+    border-bottom: 4px var(--flushed-violet) solid;
+    transition: all 50ms;
+}
+article p a::after, footer a::after{
+    padding-left: 0.3em;
+    content: url('https://api.iconify.design/nimbus/link.svg?color=hsl(330%2C%2025%25%2C%2050%25)&width=20');
+}
+
+
+article p a:hover, article h2 a:hover{
+    border-bottom: 6px var(--flushed-violet) solid;
+}
+
+
+.os-theme-round-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle::before{
+    content: url('https://api.iconify.design/ph/star-four-fill.svg?color=hsl(282%2C%2018%25%2C%2065%25)');
+    transform: translate(-13%, -13%) scale(1.3);
+    background: none;
+}
+
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle,
+.os-theme-dark > .os-scrollbar:hover > .os-scrollbar-track > .os-scrollbar-handle,
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle.active{
+    background: var(--pale-violet-darker);
+}
+
+
+.overflow{
+    border: 4px var(--pale-violet) solid;
+    border-radius: 20px;
+    height:10em;
+    width:100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+.scroll-section{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width:100%;
+}
+
+
+.overflow-x{
+    overflow: scroll;
+    overflow-x: visible;
+    overflow-y: visible;
+    width: 100%;
+}
+
+.highlight-empty{
+    padding: 0.3em;
+    border-radius: 10px;
+}
+
+.overflow .frame-hide{
+    display: none;
+}
+
+

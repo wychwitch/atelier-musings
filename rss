@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Wych's Atelier</title>
+<description>My musings</description>
+<link>https://atelierwy.ch/musings</link>
+<atom:link href="https://atelierwy.ch/musings/rss.xml" rel="self" type="application/rss+xml"/>
+<item>
+<guid isPermaLink="true">https://atelierwy.ch/musings/hello-world</guid>
+<title>Hello World!</title>
+<link>https://atelierwy.ch/musings/hello-world</link>
+<description>Hello world! Welcome to my blog!
+I’m probably going to post a variety of things here,[...]</description>
+<pubDate>Mon, 19 Jun 2023 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

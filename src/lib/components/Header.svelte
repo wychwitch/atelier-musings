@@ -1,15 +1,15 @@
 <header class="bg-pale-violet-200">
-  <a href="https://atelierwy.ch">Return Home</a>
+  <a href="https://atelierwy.ch/">Return Home</a>
   <nav>
     <ul>
       <li>
-        <a href="/musings">Musings</a>
+        <a href="/musings/">Musings</a>
       </li>
       <li>
-        <a href="/musings/about">About</a>
+        <a href="/musings/about/">About</a>
       </li>
       <li>
-        <a href="/musings/contact">Contact</a>
+        <a href="/musings/contact/">Contact</a>
       </li>
     </ul>
   </nav>

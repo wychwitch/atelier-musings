@@ -3,7 +3,7 @@
   <nav>
     <ul>
       <li>
-        <a href="/musings">Musings</a>
+        <a href="/">Musings</a>
       </li>
       <li>
         <a href="/about">About</a>

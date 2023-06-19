@@ -1,8 +1,8 @@
 import { fetchMarkdownPosts } from '$lib/utils'
 
 const siteURL = 'https://atelierwy.ch/musings'
-const siteTitle = "Wych's Atelier"
-const siteDescription = 'My musings'
+const siteTitle = "Wych's Musings"
+const siteDescription = 'My musings about stuff and things, usually coding'
 
 export const prerender = true
   

@@ -12,11 +12,19 @@ I'm probably going to post a variety of things here, with reposts on tumblr.
 
 Here is a test for code:
 
+@ line 27
 ```rust
-fn add_people(mut commands: Commands) {
-    commands.spawn((Person, Name("Elaina Proctor".to_string())));
-    commands.spawn((Person, Name("Renzo Hume".to_string())));
-    commands.spawn((Person, Name("Zayna Nieves".to_string())));
+fn main() {
+    App::new()
+        .add_plugins(DefaultPlugins)
+        .add_plugin(HelloPlugin)
+        .run();
+}
+
+fn greet_people(time: Res<Time>, query: Query<&Name, With<Person>>) {
+    for name in &query {
+        println!("hello {}!", name.0);
+    }
 }
 ```
 

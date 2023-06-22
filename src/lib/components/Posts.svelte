@@ -6,9 +6,9 @@ export let posts
 {#if posts.length}
 <ul class="flex flex-col sm:flex-row flex-wrap justify-center">
   {#each posts as post}
-    <li class="m-2 w-96 h-80 border-4 border-flushed-violet rounded-lg p-4">
+    <li class="m-2 w-96 h-80 border-4 odd:border-hex-primary even:border-hex-primary rounded-lg p-4 bg-hex-background">
       <h2>
-        <a class="border-b-4 border-flushed-violet hover:border-b-8 transition-all ease-in-out delay-25" href={post.path}>
+<a class="border-b-4 border-hex-secondary hover:border-b-8 transition-all ease-in-out delay-25" href={post.path}>
           {post.meta.title}
         </a>
       </h2>
@@ -19,7 +19,7 @@ export let posts
 {/if}
       <br>
       <p class="text-lg">{@html post.Preview} </p>
-      <p class="my-6"><a href={post.path} class="readmore rounded-lg bg-flushed-violet p-1 hover:border-4 hover:bg-transparent border-flushed-violet transition-all ease-in-out delay-25">Read More</a></p>
+      <p class="my-6"><a href={post.path} class="readmore rounded-lg bg-hex-primary p-2 hover:border-4 hover:bg-transparent border-hex-primary transition-all ease-in-out delay-25">Read More</a></p>
     </li>
   {/each}
 </ul>

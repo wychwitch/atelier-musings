@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Concert+One&family=Cutive+Mono&family=Dosis:wght@500&family=Fredoka&family=Nunito&family=Supermercado+One&display=swap');
 
 :root{
-    
-    --dyed-white: hsla(282, 45%, 85%, 1);
-    --pale-violet: hsla(282, 26%, 75%, 1);
-    --pale-violet-dark: hsla(282, 23%, 70%, 1);
-    --pale-violet-darker: hsla(282, 18%, 65%, 1);
-    --dusky-violet: hsla(282, 13%, 70%, 1);
-    --dead-violet: hsla(282, 8%, 40%, 1);
-    --deep-violet: hsl(290, 13%, 29%);
-    --dirty-violet: hsl(330, 17%, 29%);
-    --flushed-violet: hsl(330, 25%, 50%);
+    --hex-text: #020302;
+    --hex-background: #fafafa;
+    --hex-primary: #b6afda;
+    --hex-secondary: #f5d6e3;
+    --hex-accent: #beb9da;
+
+    --rites-text: #06050a;
+    --rites-background: #efeef7;
+    --rites-primary: #51458c;
+    --rites-secondary: #ffffff;
+    --rites-accent: #5b4d9d;
+
+    --ritual-text: #130105;
+    --ritual-background: #fde3e7;
+    --ritual-primary: #f792a4;
+    --ritual-secondary: #fffafb;
+    --ritual-accent: #f57a91;
+
 
     --f1: 'Caveat', cursive;
 

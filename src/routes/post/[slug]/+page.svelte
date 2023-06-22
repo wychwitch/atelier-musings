@@ -3,7 +3,7 @@ import Tags from '$lib/components/Tags.svelte'
 export let data;
 const { title, date, Content, tags, edited} = data
 </script>
-<article >
+<article class="bg-hex-background rounded border-8 border-hex-primary">
   <h1 class="text-center">{ title }</h1>
   {#if data.tags.length}
     <aside class="text-center">
@@ -23,5 +23,4 @@ const { title, date, Content, tags, edited} = data
     padding: 1rem 3rem;
   }
   
-
 </style>

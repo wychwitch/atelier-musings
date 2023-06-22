@@ -3,7 +3,7 @@
 *{box-sizing: border-box;}
 
 body{
-    background-color: var(--pale-violet);
+    background-color: var(--rites-background);
     margin:0;
 }
 
@@ -13,7 +13,7 @@ header input{
 }
 
 p, footer, header{
-    color: var(--deep-violet);
+    color: var(--hex-text);
     font-family: var(--f6);
     font-size: 1.4em;
     line-height: 1.25em;
@@ -24,7 +24,11 @@ p, footer, header{
 article p{
 margin-bottom: 2rem;
 }
-
+pre[class*='language-'] {
+  overflow: scroll;
+  max-height: 28em;
+  display: block;
+}
 main{
     display: flex;
     flex-flow: column;
@@ -32,24 +36,21 @@ main{
     align-items: center;
     margin: 0 1em;
 }
-
-h2 {
+h1,h2,h3,h4{
     font-family: var(--f7);
-    color: var(--deep-violet);
+    color: var(--hex-primary);
+}
+h2 {
     margin: 0;
     font-size: 3rem;
 }
 
 h3{
-    font-family: var(--f7);
-    color: var(--deep-violet);
     margin: 0;
     font-size: 2rem;
 }
 
 h1{
-    font-family: var(--f7);
-    color: var(--deep-violet);
     margin: 0;
     font-size: 4rem;
 }
@@ -67,24 +68,20 @@ article h4{
   }
 
 main{
-    background-color: var(--dyed-white);
+    background-color: var(--rites-background);
 }
 
 
 article p a, footer a{
     text-decoration: none;
     color: var(--deep-violet);
-    border-bottom: 4px var(--flushed-violet) solid;
+    border-bottom: 4px var(--hex-primary) solid;
     transition: all 50ms;
-}
-article p a::after, footer a::after{
-    padding-left: 0.3em;
-    content: url('https://api.iconify.design/nimbus/link.svg?color=hsl(330%2C%2025%25%2C%2050%25)&width=20');
 }
 
 
 article p a:hover, article h2 a:hover{
-    border-bottom: 6px var(--flushed-violet) solid;
+    border-bottom: 6px var(--hex-primary) solid;
 }
 
 

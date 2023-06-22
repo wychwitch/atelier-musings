@@ -1,22 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: ['./src/**/*.{html,js,svelte,ts,mdx,md}'],
   theme: {
     extend: {
       colors:{
-      'dyed-white': '#e0c8ea',
-      'pale-violet': {
-        100: '#c6afd0',
-        200: '#baa1c4',
-        300: '#ac96b6'
+      'hex': {
+        'text': '#020302',
+        'background': '#fafafa',
+        'primary': '#b6afda',
+        'secondary': '#f5d6e3',
+        'accent': '#bdd9af',
       },
-      'dusky-violet': '#b6a9bc',
-      'dead-violet': '#695e6e',
-      'deep-violet': '#504054',
-      'dirty-violet': '#573d4a',
-      'flushed-violet': '#9f6080',
-      'river-spirit':'#5A6296'
-      }
+      'rites': {
+        'text': '#06050a',
+        'background': '#efeef7',
+        'primary': '#51458c',
+        'secondary': '#ffffff',
+        'accent': '#5b4d9d',
+        },
+      'ritual': {
+        'text': '#130105',
+        'background': '#fde3e7',
+        'primary': '#f792a4',
+        'secondary': '#fffafb',
+        'accent': '#f57a91',
+      },
+     }
     },
   },
   plugins: [],

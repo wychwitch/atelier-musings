@@ -1,6 +1,5 @@
 <script>
   export let palettes
-  console.log("wa")
 </script>
 
 {#if palettes.length}

@@ -1,10 +1,10 @@
 ---
 title: Moving to Sveltekit
-date: 2023-06-21
+date: 2023-06-20
+edited: 2023-6-25
 tags:
  - design
  - web-weaving
- - colors
 ---
 <script>
 import Palette from '$lib/components/Palette.svelte'

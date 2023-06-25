@@ -1,5 +1,5 @@
 <header class="bg-pale-violet-200">
-  <a href="https://atelierwy.ch/">Return Home</a>
+  <a href="/">Return Home</a>
   <nav>
     <ul>
       <li>

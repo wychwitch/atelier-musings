@@ -24,14 +24,9 @@ p, footer, header{
 article p{
 margin-bottom: 2rem;
 }
-pre[class*="language-"]{
-min-width: 0;
-  overflow: scroll;
-  max-width: 40rem;
-  display: block;    
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
+
+
+
 main{
     display: flex;
     flex-flow: column;

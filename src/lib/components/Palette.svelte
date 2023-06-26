@@ -1,15 +1,15 @@
 <script>
   export let palettes
 </script>
-
+<section class="max-w-sm overflow-scroll p-4">
 {#if palettes.length}
   {#each palettes as palette}
 <ul class="flex flex-row justify-center my-3">
-    <li class="h-32 w-32 mx-2 rounded-xl text-center flex flex-col align-center justify-center" style="background-color: {palette.text}">
+    <li class="min-h-32 min-w-32 mx-2 rounded-xl text-center flex flex-col align-center justify-center" style="background-color: {palette.text}">
         <p class="m-0" style="color: {palette.background}" >Text</p>
         <p class="m-0 select-all" style="color: {palette.background}">{palette.text}</p>
     </li>
-    <li class="border-4 h-32 w-32 mx-2 rounded-xl text-center flex flex-col align-center justify-center" style="background-color: {palette.background}; border-color:{palette.primary}">
+    <li class="border-4 min-h-32 min-w-32 mx-2 rounded-xl text-center flex flex-col align-center justify-center" style="background-color: {palette.background}; border-color:{palette.primary}">
         <p class="m-0" style="color: {palette.text}">BG</p>
         <p class="m-0 select-all" style="color: {palette.text}">{palette.background}</p>
     </li>
@@ -29,3 +29,4 @@
   {/each}
 
 {/if}
+        </section>

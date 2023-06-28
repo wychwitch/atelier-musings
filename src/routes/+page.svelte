@@ -9,7 +9,7 @@ import Icon from '@iconify/svelte';
     <div class="flex-row flex-wrap space-x-8 text-center p-8">
       <p class="inline group">
         <Icon class="inline" icon="material-symbols:garden-cart-rounded" color="#bdd9af" width="48" />
-        <a href="/flowerbed" class="transition-all ease-in-out border-b-4 border-hex-accent group-hover:border-b-8">
+        <a href="https://wychwit.ch/flowerbed" class="transition-all ease-in-out border-b-4 border-hex-accent group-hover:border-b-8">
           Digital Garden
         </a>
       </p>

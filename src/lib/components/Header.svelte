@@ -8,10 +8,10 @@
         <a href="/musings/">/musings</a>
       </li>
       <li>
-        <a href="/musings/about/">/about</a>
+        <a href="/about/">/about</a>
       </li>
       <li>
-        <a href="/musings/contact/">/contact</a>
+        <a href="/contact/">/contact</a>
       </li>
     </ul>
   </nav>

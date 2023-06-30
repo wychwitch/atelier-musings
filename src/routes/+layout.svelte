@@ -7,6 +7,7 @@ import { fade } from 'svelte/transition'
 export let data
 </script>
 <Header />
+<div class="pb-36 md:pb-0"></div>
 {#key data.currentRoute}
   <main class="rounded" in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
     <slot />

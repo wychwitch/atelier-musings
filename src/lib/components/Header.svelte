@@ -1,17 +1,34 @@
-<header class="bg-pale-violet-200">
+<script>
+import Icon from '@iconify/svelte';
+</script>
+<header class="bg-rites-background fixed md:static h-24 w-full md:bg-transparent border-b-8 md:border-b-transparent border-b-hex-primary">
   <a href="/">
-<svg class="fill-hex-text" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M12 3s-6.186 5.34-9.643 8.232A1.041 1.041 0 0 0 2 12a1 1 0 0 0 1 1h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a1 1 0 0 0 1-1a.98.98 0 0 0-.383-.768C18.184 8.34 12 3 12 3z"/></svg>
+      <Icon class="md:hidden"  icon="iconamoon:home-fill" width="64" color="#b6afda" />
+      <span class="hidden md:inline text-4xl">/home</span>
+
   </a>
   <nav>
     <ul>
       <li>
-        <a href="/musings/">/musings</a>
+        <a href="/musings/">
+
+          <Icon class="md:hidden" icon="fa6-solid:newspaper" width="64" color="#b6afda" />
+          <span class="hidden md:inline text-4xl">/musings</span>
+        </a>
       </li>
       <li>
-        <a href="/about/">/about</a>
+        <a href="/about/">
+          <Icon class="md:hidden" icon="octicon:feed-person-16" width="64" color="#b6afda" />
+          <span class="hidden md:inline text-4xl">/about</span>
+
+        </a>
       </li>
       <li>
-        <a href="/contact/">/contact</a>
+        <a href="/contact/">
+          <Icon class="md:hidden" icon="majesticons:mail" width="64" color="#b6afda" />
+          <span class="hidden md:inline text-4xl">/contact</span>
+
+        </a>
       </li>
     </ul>
   </nav>

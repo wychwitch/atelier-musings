@@ -4,7 +4,7 @@
 <section>
 {#if palettes.length}
   {#each palettes as palette}
-<ul class="flex flex-row justify-center my-3 flex-wrap">
+<ul class="flex flex-row justify-center my-10 flex-wrap">
     <li class="h-32 w-32 m-2 rounded-xl text-center flex flex-col align-center justify-center" style="background-color: {palette.text}">
         <p class="m-0" style="color: {palette.background}" >Text</p>
         <p class="m-0 select-all" style="color: {palette.background}">{palette.text}</p>

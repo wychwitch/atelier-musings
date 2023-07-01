@@ -4,9 +4,9 @@ export let posts
 </script>
 <section>
 {#if posts.length}
-<ul class="flex flex-col sm:flex-row flex-wrap justify-center">
+<ul class="flex flex-col sm:flex-row flex-wrap w-full justify-center">
   {#each posts as post}
-    <li class="m-2 w-96 h-80 border-4 odd:border-hex-primary even:border-hex-primary rounded-lg p-4 bg-hex-background">
+    <li class="md:mx-2 my-2 w-full md:w-96 md:h-80 border-4 odd:border-hex-primary even:border-hex-primary rounded-lg p-4 bg-hex-background">
       <h2>
 <a class="border-b-4 border-hex-secondary hover:border-b-8 transition-all ease-in-out delay-25" href={post.path}>
           {post.meta.title}
@@ -29,9 +29,6 @@ export let posts
 <style >
   a.readmore::after{
     content:""
-  }
-  section{
-   margin: 1rem;
   }
   a{
     font-size: inherit;
